@@ -1,1 +1,0 @@
-# This material is about MLP, CNN, LSTM
