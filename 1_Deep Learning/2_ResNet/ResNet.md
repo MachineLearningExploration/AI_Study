@@ -4,7 +4,7 @@
 *  https://datascienceschool.net/view-notebook/958022040c544257aa7ba88643d6c032/
 *  https://towardsdatascience.com/understanding-and-coding-a-resnet-in-keras-446d7ff84d33
 
-This is written by Hyemee Kim(khmee0219@google.com)
+This is written by Hyemee Kim(khmee0219@gmail.com)
 
 #### Intro
 
