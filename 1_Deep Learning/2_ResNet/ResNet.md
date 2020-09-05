@@ -4,19 +4,28 @@
 *  https://datascienceschool.net/view-notebook/958022040c544257aa7ba88643d6c032/
 *  https://towardsdatascience.com/understanding-and-coding-a-resnet-in-keras-446d7ff84d33
 
+This is written by Hyemee Kim(khmee0219@google.com)
 
 #### Intro
 
 최근 CNN의 기술을 통한 분류는 사람이 가능한 수준 혹은 그 이상으로 발전하였다. 이를 통해 발전한 네트워크 구조는 이미지를 중심으로 발전하였다. 하지만, 이제는 이미지 이외의 다양한 성격의 데이터에 활용될 수 있는 것을 알고, 다양한 시도가 이루어지고 있다. 이를 통해 서로 다른 성격의 딥러닝 모델들이 빠른 속도로 발전하고 있으며, 높은 성능으로 다양한 곳에서 활용되고 있다.
 
-그 중 ResNes
+그 중 ResNet은 layer가 많아질 수록 손실되거나 확장되는 문제를 해결하기 위해 사용되는 모델인 만큼, 다른 모델들에서도 충분히 활용가능한 컨셉으로 생각하여 스터디를 진행하였다.
+
+ResNet 이전의 이미지 처리 Deep Learning 알고리즘은 다음과 같다.
 
 (Reference: https://medium.com/analytics-vidhya/cnns-architectures-lenet-alexnet-vgg-googlenet-resnet-and-more-666091488df5)
 
+![History](https://miro.medium.com/max/1050/1*DBXf6dzNB78QPHGDofHA4Q.png)
+
 * LeNet-5(1998)
 * AlexNet(2012)
+    * 해당 알고리즘은 병렬로 구성된 CNN을 기반으로 한다. 이는 학습속도를 빠르게 하기 위함이나, 장비의 부족으로 시도해보지 못했다.
+
 * ZFNet(2013)
 * GoogLeNet/Inception(2014)
+    * 발표 이후 높은 성능을 보였으나, 무거운 모델 구조로 ResNet보다 선호도가 낮다.
+
 * VGGNet(2014)
 * ResNet(2015)
 
@@ -66,3 +75,13 @@ Python 및 Keras를 활용하여 만든 ResNet은 각각 다음과 같다.
 * [ResNet152](./resnet152.py) ~ [구조](./resnet152.png)
 
 (해당 코드는 [Run](./Run.py)를 활용하여 실행할 수 있다.)
+
+#### Ongoing
+
+- 이미지 분류
+    
+```
+활용한 이미지 데이터는 일관된 특성을 관찰하기가 매우 어려워 분류의 성능이 매우 떨어졌다. 기존에 전통적인 CNN 모델에 다양한 filter를 사용하여 분류를 시도해보고, Autoencoder를 활용하여 특징을 추출하는 전처리 과정을 거쳐 이미지 분류를 시도해보았으나, 모두 결과가 좋지 않았다.
+
+이미지 crop 사이즈를 줄여 ResNet 기반의 분류 작업을 수행하고 있다. 전통적인 CNN 방법론과 성능을 비교하였을 때, 학습속도가 월등히 빠르며, 높은 성능을 보여주고 있다. 현재로서는 overfitting하는 결과를 보이며, 이는 학습데이터가 부족하여 발생하는 것으로 추정된다. 추가적인 데이터를 확보하여 학습을 진행해볼 예정에 있다. 
+```
