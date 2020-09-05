@@ -24,3 +24,9 @@
 2. CNN: MNIST data classification
 3. LSTM: airline passenger prediction
 
+
+
+## ☕️ 2주차 
+
+1. Resnet 개념
+2. 코드 짜보기 
