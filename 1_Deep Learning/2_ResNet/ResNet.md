@@ -74,7 +74,7 @@ Python 및 Keras를 활용하여 만든 ResNet은 각각 다음과 같다.
 * [ResNet101](./resnet101.py) ~ [구조](./resnet101.png)
 * [ResNet152](./resnet152.py) ~ [구조](./resnet152.png)
 
-(해당 코드는 [Run](./Run.py)를 활용하여 실행할 수 있다.)
+(해당 코드는 [Run](./run.py)를 활용하여 실행할 수 있다.)
 
 #### Ongoing
 

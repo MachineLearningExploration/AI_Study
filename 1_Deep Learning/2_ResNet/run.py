@@ -1,7 +1,7 @@
-import os
-from resnet50 import ResNet50
+from resnet34 import ResNet34
 import easydict
 from keras.optimizers import Adam
+from keras.utils import plot_model
 
 # parameters
 
@@ -20,7 +20,11 @@ epochs = 100
 
 
 # build model
-resnet = ResNet50(args).model
+resnet = ResNet34(args).model
+
+# save model architecture as image
+
+# plot_model(resnet, show_shapes=True, to_file = 'resnet34.png')
 
 ## comfile model
 resnet.compile(optimizer=Adam(learning_rate=lr), loss='categorical_crossentropy', metrics = ['accuracy'])
