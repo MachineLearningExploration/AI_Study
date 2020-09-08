@@ -68,11 +68,11 @@ ResNet는 굉장히 깊기 때문에 복잡도가 높은 모델이다. 이와 �
 Python 및 Keras를 활용하여 만든 ResNet은 각각 다음과 같다.
 (각 모델의 구조는 여기에 올리기에 너무 길어 링크로 대체한다.)
 
-* [ResNet18](./resnet18.py) ~ [구조](./resnet18.png)
-* [ResNet34](./resnet34.py) ~ [구조](./resnet34.png)
-* [ResNet50](./resnet50.py) ~ [구조](./resnet50.png)
-* [ResNet101](./resnet101.py) ~ [구조](./resnet101.png)
-* [ResNet152](./resnet152.py) ~ [구조](./resnet152.png)
+* [ResNet18](./model/resnet18.py) ~ [구조](./img/resnet18.png)
+* [ResNet34](./model/resnet34.py) ~ [구조](./img/resnet34.png)
+* [ResNet50](./model/resnet50.py) ~ [구조](./img/resnet50.png)
+* [ResNet101](./model/resnet101.py) ~ [구조](./img/resnet101.png)
+* [ResNet152](./model/resnet152.py) ~ [구조](./img/resnet152.png)
 
 (해당 코드는 [Run](./run.py)를 활용하여 실행할 수 있다.)
 

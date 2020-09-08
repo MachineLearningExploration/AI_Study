@@ -30,3 +30,11 @@
 
 1. Resnet 개념
 2. 코드 짜보기 
+
+
+
+## ☕️ 3주차 
+
+1. Attention 개념 이해
+2. Dense를 이용한 Attention 예제 코드 이해
+3. Google Trend의 'COVID' 데이터를 활용한 Attention 도출 코드 작성
